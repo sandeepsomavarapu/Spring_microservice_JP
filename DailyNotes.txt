@@ -1,0 +1,160 @@
+
+	Spring overview
+	
+	Spring Boot 
+		
+		-->
+		Oauth
+		junit/mockito
+	Microservices	
+		
+		sync--->
+		async--->kafka
+		
+	docker 
+		
+	Spring Framework:
+	==================
+		rod johnson -->2003
+		
+			6.x
+		light weight 
+		loosley coupled 		
+	
+	spring core 
+	
+		container -->BF,AC life cycle object 
+		
+		
+			CREATION OF OBJECT
+			WIRING 
+			CONFIGURING
+			DESTROYING
+	
+		CONFIGURATION file
+		
+			xml config --><beans><bean>
+			annotation config-->avoid xml--->@Component/@Service/Repository/Controller
+							C  -->Test -->autowiring --@Autowired
+							@Scope
+							@Value
+							@Primary
+							@Qualify
+			java config
+						@Configuration
+						@ComponentScan
+						
+						@Bean
+	Note:
+	======
+	spring has given annotations for user defined classes @Component,......
+	
+	explicit --->java config
+	
+		@Bean("")
+		public Datasource getDB()
+		{
+		TomcatDS ds=new TomcatDS();
+		
+		
+		}
+		
+		
+Spring Boot:3.x
+============
+	it is an extension to the spring framework
+	
+	
+		server-->
+		
+		spring boot-->17
+		
+		db
+		java
+		spring
+		jpa
+		hibernate....maven
+		
+		configuration
+
+	production ready apps
+														server,datasource....
+		1)auto configuration	 --->most of the commonly used classes already configured by SB				
+		2)embeded(internal)server -->tomcat,weblogic	,hikari spring boot 1.x-->tomcat
+		3)starters   starter parent  1-starter--50-60
+		4)actuators  /beans,/metrics,/health,/env,config....
+		5)h2 DB(in-built)
+	
+	
+	STS-->spring tool suite-->pivotal
+	
+	eclipse-->sts extention
+	
+	
+	spring intializer
+	
+	sts
+	
+	controller
+	
+	restcontroller
+	
+
+	webservices:
+	============
+		SOA
+		
+		phonepe<--->apps
+			
+			RMI
+			EJB
+			SP			java<--->java
+	
+			DCOM		.net<--->.net
+			RPC			c/c++<--->c/c++
+			CORBA		interoperable
+	
+					java<--->python
+	
+	webservices
+	
+			SOAP-->	XML
+			
+			REST--> xml,json,pt,html,js
+	
+	
+	web apps
+	spring boot app--->rest api
+		http urls
+		
+		rest--->jackson-->JSON
+	
+		java-->emp
+					-->JSON-->jackson
+					
+	Employee emp=new Employee(123,"suresh",...)
+	
+		{
+		"eid":123,
+		"ename":"suresh"
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
