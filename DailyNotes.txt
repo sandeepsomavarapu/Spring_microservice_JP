@@ -39,7 +39,7 @@
 							@Scope
 							@Value
 							@Primary
-							@Qualify
+							@Qualified
 			java config
 						@Configuration
 						@ComponentScan
@@ -143,16 +143,53 @@ Spring Boot:3.x
 	
 	
 	
+	DAO
+	
+	1)add product
+	2)update product
+	3)delete product
+	4)get Product by id 
+	5)get all products
+	6)get all products between the price
+	7)get all products by category
 	
 	
+	Datajpa		-->CrudRepository,JpaRepository
 	
+	https://stackabuse.com/guide-to-spring-data-jpa/
 	
+	DSL grammer 
 	
+	exception handling
+			
+			controller level eh	-->inside controller
+								
+			application/global level eh-->
+			
+			
+			@ExceptionHandler
+			@ResponseStatus
+			
+			
+			@ControllerAdvice
+			
 	
+	validations :
 	
+			validation
+			MethodArgumentNotValidException
+	
+	actuators
+	
+	h2
 
-
-
+	oauth
+	
+	junit
+	
+	microservices
+	
+		kafka
 
 
 
