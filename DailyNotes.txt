@@ -178,20 +178,121 @@ Spring Boot:3.x
 	
 			validation
 			MethodArgumentNotValidException
+			@Validated
 	
 	actuators
 	
-	h2
-
-	oauth
+	h2-->database-->inmemory
 	
-	junit
+	xml
 	
 	microservices
 	
+		
 		kafka
+		oauth
+		junit
+		Docker 
+
+https://docs.spring.io/spring-boot/reference/actuator/endpoints.html
 
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
+		
+		
+		h2-console
+		
+		
+		
+microservices:
+==============		
+	Spring cloud	
+		
+		monolithic architecture 
+		
+		
+		"it says decompose/split/devide our large project into smaller services and later 
+		communicate the services"
+		
+				devide
+				communicate
+		
+		
+		
+		1)independently scallable
+		2)independently deployable
+		3)independently developed
+		
+		
+		2 ways
+			
+				1)sync  		http ,RestTemplate,WebClient,OpenFiegn
+				2)async			kafka,activemq,rabbitmq
+		
+		
+		
+		microservices 
+		
+		centralised config  ---->spring cloud
+			config server --->git,consul
+			
+	centralized location
+		-->cloud config
+				spring cloud config server ---->github
+
+							project--->configserver
 
 
+	1) github
+		repository
+			.properties
+					COPY COMMON PROPERTIES
 
+	2)new project(configserver)
+			2.1) @EnableConfigServer(along with @SpringBootApplication)
+			2.2) .properties-->copy git url paste here 
+				port :888
+Example		 spring.cloud.config.server.git.uri:https://github.com/sandeepsomavarapu/config-server-repo.git	
+	
+	3)in all micro(config client)open pom.xml add below dependency
+		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		
+			
+			
+		
+		service registry,discovery
+		circuit  breaker pattern
+		distributed tracing
+		api gateway
+
+			kafka
+			
+			oauth2
+			
+			junit
+			
+			docker
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
